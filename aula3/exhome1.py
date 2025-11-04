@@ -1,5 +1,5 @@
 nome = input('digite seu nome:')
-salario = float(input("digite seu salario:"))
+salario = float(input("digite seu salario:").replace (",","."))
 if salario >= 3000:
     desconto = (salario*0.11)
 elif salario >= 2000:
@@ -30,9 +30,9 @@ elif salario <= 2000:
 salarioliq = salario - (desconto + trans) + bonus
 
 print("================================================================================================")
-print (f"{nome}, seu salario bruto informado foi de {salario} e seu salario liquido é de {salarioliq}")
+print (f"{nome}, seu salario bruto informado foi de {salario:.2f} e seu salario liquido é de {salarioliq:.2f}".replace(".",","))
 print("=================================================================================================")
-print(f"os descontos aplicados foram de  {desconto} referente ao INSS, {trans} referente ao VT")
+print(f"os descontos aplicados foram de  {desconto:.2f} referente ao INSS, {trans:.2f} referente ao VT".replace(".",","))
 print("=================================================================================================")
-print(f"também recebeu um bonus de {bonus}, e seu cargo atual é de {cargo}")
+print(f"também recebeu um bonus de {bonus}, e seu cargo atual é de {cargo}".replace(".",","))
 print("=================================================================================================")
