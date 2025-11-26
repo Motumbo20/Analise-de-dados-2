@@ -17,6 +17,8 @@ def pes():
     except ValueError:
         print("digite um numero valido")
 
+altura = alt()
+peso = pes()
+imc = (peso/(altura*altura))
 
-
-print(f"peso {peso}. altura {altura}")
+print(f"peso {peso}. altura {altura} e seu imc é {imc}")
