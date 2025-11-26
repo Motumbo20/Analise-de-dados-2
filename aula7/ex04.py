@@ -5,7 +5,10 @@ def sub(a,b):
 def mult(a,b):
     return a * b
 def div(a,b):
-    return a / b
+    if a and b != 0:
+        return a / b
+    else:
+        return "não divide por zero"
 
 num1 = int(input("digite o 1° valor: "))
 num2 = int(input("digite o 2° valor: "))
